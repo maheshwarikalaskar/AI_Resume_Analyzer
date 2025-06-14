@@ -1,96 +1,39 @@
-📄 AI Resume Analyzer
-An interactive AI-powered tool that analyzes a candidate's resume and compares it with a job description to compute a match score, extract relevant skills, and highlight missing skills — helping both job seekers and recruiters.
 
-🚀 Features
-📤 Upload your resume (PDF)
+# 🧠 AI Resume Analyzer
 
-📝 Paste or type the job description
+An intelligent resume analysis tool that compares a candidate's resume with a given job description using Natural Language Processing (NLP) to extract skills, compute similarity scores, and highlight gaps. Ideal for job seekers, placement cells, and HR professionals.
 
-⚙️ NLP-powered keyword extraction
+---
 
-🔍 Resume–JD similarity scoring using BERT embeddings
 
-❌ Highlights missing or unmatched skills
 
-✅ Real-time feedback via interactive Streamlit frontend
+## 🚀 Key Features
 
-🧠 Tech Stack
-Frontend: Streamlit
+- 📄 Upload resume (PDF format)
+- 📝 Paste or type a job description (JD)
+- 🧠 NLP-based keyword & skill extraction
+- 🤖 Resume–JD semantic similarity using BERT embeddings
+- ❌ Highlights missing skills or mismatches
+- 📊 Generates match score with suggestions
+- ⚡️ Runs in browser using Streamlit UI
 
-Backend: Python
+---
 
-NLP: spaCy, Sentence-Transformers (BERT)
 
-PDF Parsing: pdfplumber
 
-📦 Requirements
-Install all dependencies using:
+## 🛠️ Tech Stack
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Or manually:
+| Layer      | Technology                     |
+|------------|---------------------------------|
+| **Frontend** | Streamlit                       |
+| **Backend**  | Python                          |
+| **NLP Models** | spaCy, SentenceTransformers (BERT) |
+| **PDF Parsing** | pdfplumber                    |
 
-bash
-Copy
-Edit
-pip install streamlit pdfplumber spacy sentence-transformers tensorflow keras tf-keras
-python -m spacy download en_core_web_sm
-🏗️ Project Structure
-bash
-Copy
-Edit
-resume-analyzer/
-├── app.py                   # Streamlit frontend app
-├── requirements.txt         # All Python dependencies
-├── README.md                # You're reading it!
-└── sample_data/             # Optional sample resumes & JDs
-🧪 How to Run Locally
-bash
-Copy
-Edit
-streamlit run app.py
-The app will open in your default browser at:
-👉 http://localhost:8501
+---
 
-💼 Sample Use Case
-✅ Example Resume:
-makefile
-Copy
-Edit
-Skills: Python, Machine Learning, NLP, Deep Learning, Pandas
-✅ Example Job Description:
-csharp
-Copy
-Edit
-Looking for a candidate with experience in NLP, Transformers, Deployment, and TensorFlow.
-🔍 Output:
-Match Score: 75%
 
-Missing Skills: Deployment, TensorFlow
 
-🎯 Who is it for?
-🎓 Students preparing for placements
 
-👨‍💼 Professionals switching roles
 
-👩‍🏫 Career counselors
 
-🧠 Resume screening tools (HR/ATS)
-
-📈 Future Enhancements
-🔢 Resume ranking for bulk uploads
-
-🧠 Skill gap analysis and learning suggestions
-
-🌐 JD parsing directly from job portals (LinkedIn, Indeed)
-
-🧾 Resume builder with real-time recommendations
-
-📊 Exportable match reports in PDF or CSV
-
-👨‍💻 Author
-Maheshwari Kalaskar
-AI/ML Enthusiast | Final Year B.Tech (AI)
-GitHub: github.com/maheshwarikalaskar
